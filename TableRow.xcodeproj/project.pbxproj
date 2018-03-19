@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		300ADE17A3C0FC17F6104CA5 /* Pods_TableRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F32DB363A4D28475F0D71E /* Pods_TableRow.framework */; };
 		4F1D492F205D48790079A1DA /* TableRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1D4925205D48790079A1DA /* TableRow.framework */; };
 		4F1D4934205D48790079A1DA /* TableRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D4933205D48790079A1DA /* TableRowTests.swift */; };
 		4F1D4936205D48790079A1DA /* TableRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1D4928205D48790079A1DA /* TableRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,7 +18,11 @@
 		4F1D4985205F08C20079A1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1D4983205F08C20079A1DA /* Main.storyboard */; };
 		4F1D4987205F08C20079A1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1D4986205F08C20079A1DA /* Assets.xcassets */; };
 		4F1D498A205F08C20079A1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1D4988205F08C20079A1DA /* LaunchScreen.storyboard */; };
-		8F6745A743CDE4F9FE4871FA /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256FB36277F4E04489798D51 /* Pods_Example.framework */; };
+		4F1D49B0205F3A970079A1DA /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1D49AF205F3A970079A1DA /* Eureka.framework */; };
+		4F1D49BB205F3C440079A1DA /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1D49AF205F3A970079A1DA /* Eureka.framework */; };
+		4F1D49BC205F3C440079A1DA /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1D49AF205F3A970079A1DA /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F1D49BE205F3C760079A1DA /* TableRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1D4925205D48790079A1DA /* TableRow.framework */; };
+		4F1D49BF205F3C760079A1DA /* TableRow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1D4925205D48790079A1DA /* TableRow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +33,31 @@
 			remoteGlobalIDString = 4F1D4924205D48790079A1DA;
 			remoteInfo = TableRow;
 		};
+		4F1D49C0205F3C760079A1DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F1D491C205D48790079A1DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F1D4924205D48790079A1DA;
+			remoteInfo = TableRow;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4F1D49BD205F3C440079A1DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4F1D49BF205F3C760079A1DA /* TableRow.framework in Embed Frameworks */,
+				4F1D49BC205F3C440079A1DA /* Eureka.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		07D34AAA601B1ABCD6E57D9E /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		12C642770D1323B3E45E3E51 /* Pods-TableRow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableRow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableRow/Pods-TableRow.debug.xcconfig"; sourceTree = "<group>"; };
-		256FB36277F4E04489798D51 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1D4925205D48790079A1DA /* TableRow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableRow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1D4928205D48790079A1DA /* TableRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableRow.h; sourceTree = "<group>"; };
 		4F1D4929205D48790079A1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,9 +74,7 @@
 		4F1D4986205F08C20079A1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F1D4989205F08C20079A1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F1D498B205F08C20079A1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80B2A7EE666590FE1A1BA36A /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		908AE3000F5378BE33F5F89B /* Pods-TableRow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableRow.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableRow/Pods-TableRow.release.xcconfig"; sourceTree = "<group>"; };
-		B5F32DB363A4D28475F0D71E /* Pods_TableRow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableRow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1D49AF205F3A970079A1DA /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				300ADE17A3C0FC17F6104CA5 /* Pods_TableRow.framework in Frameworks */,
+				4F1D49B0205F3A970079A1DA /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F6745A743CDE4F9FE4871FA /* Pods_Example.framework in Frameworks */,
+				4F1D49BE205F3C760079A1DA /* TableRow.framework in Frameworks */,
+				4F1D49BB205F3C440079A1DA /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +113,7 @@
 				4F1D4932205D48790079A1DA /* TableRowTests */,
 				4F1D497E205F08C20079A1DA /* Example */,
 				4F1D4926205D48790079A1DA /* Products */,
-				5D10797BD9C181E12A01E8AC /* Pods */,
-				7590D7F3001B0FE238885E8A /* Frameworks */,
+				4F1D49AE205F3A970079A1DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,22 +161,10 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		5D10797BD9C181E12A01E8AC /* Pods */ = {
+		4F1D49AE205F3A970079A1DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				12C642770D1323B3E45E3E51 /* Pods-TableRow.debug.xcconfig */,
-				908AE3000F5378BE33F5F89B /* Pods-TableRow.release.xcconfig */,
-				80B2A7EE666590FE1A1BA36A /* Pods-Example.debug.xcconfig */,
-				07D34AAA601B1ABCD6E57D9E /* Pods-Example.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		7590D7F3001B0FE238885E8A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B5F32DB363A4D28475F0D71E /* Pods_TableRow.framework */,
-				256FB36277F4E04489798D51 /* Pods_Example.framework */,
+				4F1D49AF205F3A970079A1DA /* Eureka.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,12 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F1D4939205D48790079A1DA /* Build configuration list for PBXNativeTarget "TableRow" */;
 			buildPhases = (
-				5CC40EB78EE0419E03C17523 /* [CP] Check Pods Manifest.lock */,
 				4F1D4920205D48790079A1DA /* Sources */,
 				4F1D4921205D48790079A1DA /* Frameworks */,
 				4F1D4922205D48790079A1DA /* Headers */,
 				4F1D4923205D48790079A1DA /* Resources */,
-				B4132D1967D9E556F73C2265 /* [CP] Copy Pods Resources */,
+				4F1D49B6205F3BF90079A1DA /* Copy Framewroks */,
 			);
 			buildRules = (
 			);
@@ -217,16 +224,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F1D498C205F08C20079A1DA /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				018C4294670B61C27ABC01BF /* [CP] Check Pods Manifest.lock */,
 				4F1D4979205F08C10079A1DA /* Sources */,
 				4F1D497A205F08C10079A1DA /* Frameworks */,
 				4F1D497B205F08C10079A1DA /* Resources */,
-				17843E3104956A67CB28F5D4 /* [CP] Embed Pods Frameworks */,
-				5717B74EB56FBC05A8577B61 /* [CP] Copy Pods Resources */,
+				4F1D49B5205F3BB60079A1DA /* Copy Frameworks */,
+				4F1D49BD205F3C440079A1DA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4F1D49C1205F3C760079A1DA /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -306,89 +313,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		018C4294670B61C27ABC01BF /* [CP] Check Pods Manifest.lock */ = {
+		4F1D49B5205F3BB60079A1DA /* Copy Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"$(SRCROOT)/Carthage/Build/iOS/TableRow.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "Copy Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "#/usr/local/bin/carthage copy-frameworks";
 		};
-		17843E3104956A67CB28F5D4 /* [CP] Embed Pods Frameworks */ = {
+		4F1D49B6205F3BF90079A1DA /* Copy Framewroks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5717B74EB56FBC05A8577B61 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
+			name = "Copy Framewroks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5CC40EB78EE0419E03C17523 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TableRow-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B4132D1967D9E556F73C2265 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableRow/Pods-TableRow-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "#/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -427,6 +380,11 @@
 			isa = PBXTargetDependency;
 			target = 4F1D4924205D48790079A1DA /* TableRow */;
 			targetProxy = 4F1D4930205D48790079A1DA /* PBXContainerItemProxy */;
+		};
+		4F1D49C1205F3C760079A1DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F1D4924205D48790079A1DA /* TableRow */;
+			targetProxy = 4F1D49C0205F3C760079A1DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -565,7 +523,6 @@
 		};
 		4F1D493A205D48790079A1DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12C642770D1323B3E45E3E51 /* Pods-TableRow.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -574,6 +531,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -588,7 +549,6 @@
 		};
 		4F1D493B205D48790079A1DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 908AE3000F5378BE33F5F89B /* Pods-TableRow.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -597,6 +557,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -638,10 +602,14 @@
 		};
 		4F1D498D205F08C20079A1DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80B2A7EE666590FE1A1BA36A /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loromits.Example;
@@ -653,10 +621,14 @@
 		};
 		4F1D498E205F08C20079A1DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D34AAA601B1ABCD6E57D9E /* Pods-Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loromits.Example;

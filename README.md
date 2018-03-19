@@ -60,7 +60,7 @@ class ViewController: FormViewController {
 
 2. Run `$ carthage update`
 
-3. Link `TableRow.framework` in your target
+3. Link `TableRow.framework` in your target, add it to `input files` list in Build Phases `Copy Frameworks` script
 
 ## Customization
 
