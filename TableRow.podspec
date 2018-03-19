@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/EurekaCommunity/TableRow.git' }
   s.source_files  = 'Sources/**/*.{swift}'
   s.requires_arc = true
-  s.dependency 'Eureka', '~> 4.0'
+  s.dependency 'Eureka', '~> 4.1'
 end
