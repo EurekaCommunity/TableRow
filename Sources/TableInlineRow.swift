@@ -64,6 +64,8 @@ final public class TableInlineRow<T>: _TableInlineRow<T>, RowType, InlineRowType
     public var subcellTextColor = UIColor.gray
     /// Sets underlying `SelectionListRow` horizontal insets in it's superview
     public var subcellHorizontalInset: CGFloat = 16
+    /// Sets whether row should collapse on option selection, defaults to true
+    public var collapseOnInlineRowSelection = true
     
     required public init(tag: String?) {
         super.init(tag: tag)
@@ -85,7 +87,11 @@ final public class TableInlineRow<T>: _TableInlineRow<T>, RowType, InlineRowType
     
     override public func setupInlineRow(_ inlineRow: InlineRow) {
         super.setupInlineRow(inlineRow)
-        inlineRow.onDidSelect { [weak self] _ in self?.toggleInlineRow() }
+        inlineRow.onDidSelect { [weak self] _ in
+            if self?.collapseOnInlineRowSelection ?? true {
+                self?.toggleInlineRow()
+            }
+        }
         inlineRow.textColor = subcellTextColor
         inlineRow.horizontalContentInset = subcellHorizontalInset
     }
