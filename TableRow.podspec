@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'TableRow'
-  s.version = '0.2.0'
+  s.version = '0.3.0'
   s.summary = 'A tableView row (including inline variant) for use with Eureka library'
   s.homepage = 'https://github.com/EurekaCommunity/TableRow'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/EurekaCommunity/TableRow.git', :tag => s.version.to_s }
   s.source_files  = 'Sources/**/*.{swift}'
   s.requires_arc = true
-  s.dependency 'Eureka', '~> 4.1'
-  s.swift_version = '4.1'
+  s.dependency 'Eureka', '~> 4.3'
+  s.swift_version = '4.2'
 end

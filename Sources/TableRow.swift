@@ -18,7 +18,7 @@ open class TableCell<T>: Cell<T>, CellType, UITableViewDelegate, UITableViewData
         return row as? TableRow<T>
     }
     
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         contentView.addSubview(tableView)
@@ -35,7 +35,7 @@ open class TableCell<T>: Cell<T>, CellType, UITableViewDelegate, UITableViewData
         super.setup()
         accessoryType = .none
         editingAccessoryType = .none
-        height = { UITableViewAutomaticDimension }
+        height = { UITableView.automaticDimension }
         tableView.rowHeight = 44
         tableView.isScrollEnabled = false
         tableView.delegate = self
@@ -94,15 +94,15 @@ open class TableCell<T>: Cell<T>, CellType, UITableViewDelegate, UITableViewData
 
 public final class TableRow<T>: Row<TableCell<T>>, RowType where T: Equatable {
     
-    open var options = [T]()
+    public var options = [T]()
     
     private var configurationCallback: ((UITableViewCell, T, Int) -> Void)?
     private var selectionCallback: ((T) -> Void)?
     
     /// Sets textLabel color
-    open var textColor = UIColor.gray
+    public var textColor = UIColor.gray
     /// Sets horizontal insets
-    open var horizontalContentInset: CGFloat = 0
+    public var horizontalContentInset: CGFloat = 0
     
     required public init(tag: String?) {
         super.init(tag: tag)
@@ -116,14 +116,14 @@ public final class TableRow<T>: Row<TableCell<T>>, RowType where T: Equatable {
     
     /// This block gets called on option selection
     @discardableResult
-    open func onDidSelect(_ callback: @escaping (T) -> Void) -> TableRow {
+    public func onDidSelect(_ callback: @escaping (T) -> Void) -> TableRow {
         selectionCallback = callback
         return self
     }
     
     /// The block used to configure cells
     @discardableResult
-    open func configureCell(_ configurator: @escaping (UITableViewCell, T, Int) -> Void) -> TableRow {
+    public func configureCell(_ configurator: @escaping (UITableViewCell, T, Int) -> Void) -> TableRow {
         configurationCallback = configurator
         return self
     }
