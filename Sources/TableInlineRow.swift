@@ -22,7 +22,7 @@ open class TableInlineCell<T: Equatable>: Cell<T>, CellType {
     override open func setup() {
         super.setup()
         accessoryType = .none
-        editingAccessoryType =  .none
+        editingAccessoryType = .none
     }
     
     override open func update() {
@@ -85,7 +85,7 @@ final public class TableInlineRow<T>: _TableInlineRow<T>, RowType, InlineRowType
         }
     }
     
-    override public func setupInlineRow(_ inlineRow: InlineRow) {
+    override public func setupInlineRow(_ inlineRow: TableRow<T>) {
         super.setupInlineRow(inlineRow)
         inlineRow.onDidSelect { [weak self] _ in
             if self?.collapseOnInlineRowSelection ?? true {

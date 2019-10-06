@@ -20,10 +20,10 @@ class ViewController: FormViewController {
         super.viewDidLoad()
 
         form +++ Section()
-			<<< TableRow<Int> { row in
-				row.options = [1, 2, 3]
-				row.displayValueFor = { "\($0 ?? 0)" }
-			}
+            <<< TableRow<Int> { row in
+            	row.options = [1, 2, 3]
+            	row.displayValueFor = { "\($0 ?? 0)" }
+            }
             <<< TableInlineRow<String> { row in
                 row.options = ["first", second", "third"]
 				row.value = "none"
@@ -34,9 +34,9 @@ class ViewController: FormViewController {
 
 ## Requirements
 
-* iOS 8.0+
-* Xcode 9.0+
-* Eureka 4.0
+* iOS 9.0+
+* Xcode 11.0+
+* Eureka 5.0+
 
 ## Installation
 

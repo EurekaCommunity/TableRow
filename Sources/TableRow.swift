@@ -75,7 +75,7 @@ open class TableCell<T>: Cell<T>, CellType, UITableViewDelegate, UITableViewData
     }
     
     open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if let selectedValue = listRow?.value, listRow?.options.index(of: selectedValue) == indexPath.row {
+        if let selectedValue = listRow?.value, listRow?.options.firstIndex(of: selectedValue) == indexPath.row {
             cell.accessoryType = .checkmark
         } else {
             cell.accessoryType = .none
@@ -83,7 +83,7 @@ open class TableCell<T>: Cell<T>, CellType, UITableViewDelegate, UITableViewData
     }
     
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let selectedValue = listRow?.value, let index = listRow?.options.index(of: selectedValue) {
+        if let selectedValue = listRow?.value, let index = listRow?.options.firstIndex(of: selectedValue) {
             tableView.cellForRow(at: IndexPath(row: index, section: 0))?.accessoryType = .none
         }
         tableView.deselectRow(at: indexPath, animated: true)
