@@ -26,7 +26,7 @@ class ViewController: FormViewController {
             }
             <<< TableInlineRow<String> { row in
                 row.options = ["first", "second", "third"]
-		row.value = "none"
+                row.value = "none"
             }
     }
 }
