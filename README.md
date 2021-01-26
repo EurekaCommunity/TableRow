@@ -25,8 +25,8 @@ class ViewController: FormViewController {
             	row.displayValueFor = { "\($0 ?? 0)" }
             }
             <<< TableInlineRow<String> { row in
-                row.options = ["first", second", "third"]
-				row.value = "none"
+                row.options = ["first", "second", "third"]
+                row.value = "none"
             }
     }
 }
